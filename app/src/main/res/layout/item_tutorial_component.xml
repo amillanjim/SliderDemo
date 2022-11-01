@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/itemTutorial"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.sliderdemo.ui.LottieComponent
+        android:id="@+id/tutorialLottieImage"
+        android:layout_width="0dp"
+        android:layout_height="344dp"
+        android:layout_marginVertical="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.sliderdemo.jetpackCompose.components.TitleTextComponent
+        android:id="@+id/tutorialTitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorialLottieImage"/>
+
+    <com.example.sliderdemo.jetpackCompose.components.TextComponent
+        android:id="@+id/tutorialDescriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorialTitleText" />
+
+    <com.example.sliderdemo.jetpackCompose.components.StoriOutlinedButtonComponent
+        android:id="@+id/mainTutorialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorialDescriptionText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

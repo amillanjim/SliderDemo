@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SliderDemo</string>
+    <string name="title_activity_slider">Slider</string>
+</resources>
